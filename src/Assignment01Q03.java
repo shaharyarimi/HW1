@@ -1,18 +1,19 @@
 public class Assignment01Q03 {
     public static void main(String[] args) {
-        int x = 10; // TODO: Read the first string argument (replace this line)
+        int x = Integer.parseInt(args[0]);
         System.out.println("The first " + x + " Fibonacci numbers are:");
-
-        ////////////////////////////////////////////////////////////////
-        // TODO: Replace this code with the correct Fibonacci sequence
-        ////////////////////////////////////////////////////////////////
-        /// ...
-        
+        int Fib1 = 0;
+        int Fib2 = 1;
+        int exchange;
         int numOdd = 0;
-        for (int i = 0; i < x; i++) {
-            System.out.print(i);
-            if (i < x - 1) 
-                System.out.print(" "); // Make sure we don't print a trailing space
+        for (int i = 0; i< x ; i++)
+        {
+            if (Fib2%2!=0)
+                numOdd ++;
+            System.out.print(Fib2 +" ");
+            exchange = Fib2;
+            Fib2 +=Fib1;
+            Fib1 = exchange;
         }
         System.out.println();
         
