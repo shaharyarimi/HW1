@@ -9,7 +9,7 @@ public class Assignment01Q04 {
         if (array.length == 0) {
            return array;
         }
-        if (direction != 'R'&& direction != 'L') {
+        if (direction != 'R' && direction != 'L') {
             return array;
         }
         int actualMoveRight;
